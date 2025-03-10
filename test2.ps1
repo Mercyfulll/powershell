@@ -21,7 +21,7 @@ foreach ($file in $fileNames) {
 }
 
 # List all files in the directory with their sizes
-Write-Host "`nFiles in $directoryPath:"
+Write-Host "`nFiles in ${directoryPath}:"
 Get-ChildItem -Path $directoryPath | Select-Object Name, Length | Format-Table -AutoSize
 
 # Prompt the user to enter the name of a file to delete
